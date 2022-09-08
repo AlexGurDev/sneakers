@@ -1,0 +1,48 @@
+@import "src/styles/mixins";
+
+.Header {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  &Logo {
+    display: flex;
+    align-items: center;
+    &Icon {
+      margin-right: 1.6rem;
+      width: 4rem;
+      height: 4rem;
+    }
+    &Text {
+      &Title {
+        @include MediumText;
+        text-transform: uppercase;
+      }
+      &Subtitle {
+        @include SmallText;
+      }
+    }
+  }
+  &Content {
+    display: flex;
+    &Item {
+      margin-right: 3rem;
+      display: flex;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+    &Bucket {
+      margin-left: auto;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      border-radius: var(--border-radius);
+    }
+    &Account {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+}

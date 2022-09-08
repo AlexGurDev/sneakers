@@ -1,0 +1,13 @@
+.Button {
+  padding: 1rem 2rem;
+  overflow: hidden;
+  transition: $durationNormal;
+  border-radius: 5rem;
+  border: none;
+  max-width: 22rem;
+  min-width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
